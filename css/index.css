@@ -42,13 +42,19 @@ h2 p {
 }
 
 .main-menu {
+    visibility: hidden;
+    position: absolute;
     text-align: right;
+}
+
+.visible {
+    visibility: visible;
 }
 
 .main-menu li {
     /* Select for top level main menu probably use an animation to make it come out the side */
-    position: absolute;
-    visibility: hidden;
+    /* position: absolute;
+    visibility: hidden; */
     color: #fff;
     list-style: none;
     background-color: #263238;
@@ -57,8 +63,8 @@ h2 p {
 
 ul li ul li {
     /* Select for sub-categories */
-    position: absolute;
-    visibility: hidden;
+    /* position: absolute;
+    visibility: hidden; */
     padding-right: 1rem;
 }
 
