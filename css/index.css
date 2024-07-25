@@ -17,23 +17,80 @@ body {
     Mobile View
     950px
 */
-.inner-container wide-flex {
-    max-width: 100%;
-}
+/* .inner-container wide-flex {} */
 
 .flex-container {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 2rem;
+    align-items: center;
+    padding: 0 1rem;
     background-color: #263238;
 }
 
-.menu-icon > img {
+h1 p {
+    display: inline;
+    color: #ed4a76;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.menu-icon>img {
     max-width: 3rem;
 }
 
 .main-menu {
+    text-align: right;
+}
 
+.main-menu li {
+    /* Select for top level main menu probably use an animation to make it come out the side */
+    position: absolute;
+    visibility: hidden;
+    color: #fff;
+    list-style: none;
+    background-color: #263238;
+    cursor:pointer;
+}
+
+ul li ul li {
+    /* Select for sub-categories */
+    position: absolute;
+    visibility: hidden;
+    padding-right: 1rem;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    background: url("../img/crowd-background.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.hero-text-container {
+    align-items: center;
+    background-color: #fff;
+    color: #000; /* Unable to make the second 'e' in eSports red */
+    display: flex;
+    text-align: center;
+    margin: auto 0;
+    max-width: 60%;
+    min-height: 40vh;
+    word-wrap: none;
+    padding: 1rem;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.hero-container .hero-text-container .hero-text h2 p {
+    color: #ed4a76;
 }
 
 /*
