@@ -27,7 +27,8 @@ body {
     background-color: #263238;
 }
 
-h1 p {
+h1 p,
+h2 p {
     display: inline;
     color: #ed4a76;
 }
@@ -88,9 +89,6 @@ ul li ul li {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-.hero-container .hero-text-container .hero-text h2 p {
-    color: #ed4a76;
 }
 
 /*
