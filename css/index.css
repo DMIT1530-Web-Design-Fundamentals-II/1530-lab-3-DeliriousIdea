@@ -63,12 +63,6 @@ h2 p {
     cursor:pointer;
 }
 
-ul li ul li {
-    /* Select for sub-categories */
-    /* position: absolute;
-    visibility: hidden; */
-    padding-right: 1rem;
-}
 
 .hero-container {
     display: flex;
@@ -114,10 +108,41 @@ ul li ul li {
 @media screen and (min-width:950px) {
 
     body {
-        background-color: yellow;
+        background-color: #263238;
+    }
+
+    .inner-container {
+        display: flex;
+        justify-content: center;
+        gap:1rem;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    /*
+        Absolute for now, unsure how to utilize the inner container
+    */
+    .main-menu {
+        display: flex;
+        justify-content: space-between;
+        gap:1rem;
+        flex-direction: row;
+        visibility: unset;
+    }
+
+    ul li ul li {
+        position: absolute;
+        visibility: hidden;
+        padding-right: 1rem;
+    }
+
+    ul li ul li:hover,
+    ul li:hover{
+        visibility: visible;
+    }
+
+    .menu-icon {
+        position: absolute;
+        visibility: hidden;
     }
 }
-
-/*
-    Largest View
-*/
