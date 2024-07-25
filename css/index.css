@@ -91,6 +91,14 @@ ul li ul li {
     gap: 2rem;
 }
 
+.register-button {
+    background: linear-gradient(90deg, #ed4a76, #f69b50);
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: #fff;
+}
+
 /*
     Desktop View
 */
