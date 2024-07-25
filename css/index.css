@@ -1,17 +1,31 @@
 /*
+Colors: #263238 nav background
+        #ed4a76 to #f69b50 button gradient
+        ^-- Also the 'e' in esports
+*/
+/*
     Universal
 */
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
 
 
 /*
     Mobile View
+    950px
 */
 .inner-container wide-flex {
+    max-width: 100%;
 }
 
 .flex-container {
-
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    background-color: #263238;
 }
 
 .menu-icon > img {
@@ -21,3 +35,17 @@
 .main-menu {
 
 }
+
+/*
+    Desktop View
+*/
+@media screen and (min-width:950px) {
+
+    body {
+        background-color: yellow;
+    }
+}
+
+/*
+    Largest View
+*/
