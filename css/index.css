@@ -75,14 +75,15 @@ ul li ul li {
 .hero-text-container {
     align-items: center;
     background-color: #fff;
+    border-radius: 0.5rem;
     color: #000; /* Unable to make the second 'e' in eSports red */
     display: flex;
     text-align: center;
     margin: auto 0;
     max-width: 60%;
     min-height: 40vh;
-    word-wrap: none;
     padding: 1rem;
+    word-wrap: none;
 }
 
 .hero-text {
